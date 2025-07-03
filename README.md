@@ -156,6 +156,12 @@ Gradient descent is an optimization algorithm used in deep learning to minimize 
 ### Learning Rate  η: 
 Learning rate is a hyperparameter that determines the step size at each iteration when updating a model's parameters during training. It controls how quickly or slowly the model learns from the training data. A high learning rate can lead to faster convergence but may cause overshooting or instability, while a low learning rate can result in slow convergence and potentially getting stuck in local minima.
 
+### Loss Function (Linear Regression):
+$$
+Loss(m, b) = \frac{1}{n} \sum_{i=1}^{n} (y_i - (mx_i + b))^2
+$$
+
+
 ### Weight Update:
 $$
 w_{\text{new}} = w_{\text{old}} - \alpha \cdot \frac{\partial \text{Loss}}{\partial w}
