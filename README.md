@@ -158,25 +158,30 @@ Learning rate is a hyperparameter that determines the step size at each iteratio
 
 ### Loss Function (Linear Regression):
 $$
-Loss(m, b) = \frac{1}{n} \sum_{i=1}^{n} (y_i - (mx_i + b))^2
+Loss(m, b) = \sum_{i=1}^{n} (y_i - (mx_i + b))^2
 $$
 
+### Algorithm Steps (For Two Inputs):
+* Init random value for m & b.
+* Number of ecpochs and learning rate.
+  
+```python
+# Gradient Descent for Linear Regression
+for i in range(epochs):
+    b = b - η * b_slope
+    m = m - η * m_slope
+```
+### Update  b:
 
-### Weight Update:
 $$
-w_{\text{new}} = w_{\text{old}} - \alpha \cdot \frac{\partial \text{Loss}}{\partial w}
-$$
-
-### Bias Update:  
-$$
-b_{\text{new}} = b_{\text{old}} - \alpha \times \text{slope}
+b_{\text{slope}} = \frac{\partial \text{Loss}}{\partial b} = -\{2} \sum_{i=1}^{n} \left(y_i - mx_i - b\right)
 $$
 
-### Slope:
-$$
-\text{slope} = -2 \sum_{i=1}^{n}(y_i - mx_i - b)^2
-$$
+### Update  m:
 
+$$
+m_{\text{slope}} = \frac{\partial \text{Loss}}{\partial m} = -2 \sum_{i=1}^{n}  \left(y_i - mx_i - b\right)x_i
+$$
 
 ---
 
