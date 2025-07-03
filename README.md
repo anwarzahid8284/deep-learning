@@ -151,7 +151,10 @@ $$
 
 ## Lecture 6: Gradient Descent
 
-Gradient descent is an optimization algorithm used in deep learning to minimize a model's cost function. It works by iteratively adjusting the model's parameters (like weights and biases) in the direction of the steepest descent of the cost function, effectively finding the set of parameters that produce the lowest error. 
+Gradient descent is an optimization algorithm used in deep learning to minimize a model's cost function. It works by iteratively adjusting the model's parameters (like weights and biases) in the direction of the steepest descent of the cost function, effectively finding the set of parameters that produce the lowest error.
+
+### Learning Rate  η: 
+Learning rate is a hyperparameter that determines the step size at each iteration when updating a model's parameters during training. It controls how quickly or slowly the model learns from the training data. A high learning rate can lead to faster convergence but may cause overshooting or instability, while a low learning rate can result in slow convergence and potentially getting stuck in local minima.
 
 ### Weight Update:
 $$
