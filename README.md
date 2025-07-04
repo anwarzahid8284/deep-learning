@@ -183,7 +183,28 @@ $$
 m_{\text{slope}} = \frac{\partial \text{Loss}}{\partial m} = -2 \sum_{i=1}^{n}  \left(y_i - mx_i - b\right)x_i
 $$
 
----
+
+### Convex Functions:
+* A function is convex if a line segment connecting any two points on its graph lies above or on the graph itself.
+* Geometrically, this means the function curves upwards or is a straight line.
+* Convex functions have a single global minimum, meaning there's only one point where the function reaches its lowest value.
+* Optimization algorithms like gradient descent are generally more reliable and efficient for finding the global minimum of convex functions.
+
+
+
+  ![Convex Function](convex_function.jpg)
+  
+
+### Non Convex Functions:
+* A function is non-convex if it doesn't meet the criteria for being convex; it can curve downwards in some places or have multiple local minima. 
+* Non-convex functions can have multiple valleys (local minima) and a single deepest valley (global minimum). 
+* Finding the global minimum of a non-convex function can be difficult because optimization algorithms may get trapped in a local minimum. 
+* Optimization algorithms like gradient descent are generally more reliable and efficient for finding the global minimum of convex functions.
+
+
+
+  ![Non Convex Function](non_convex_function.png)
+
 
 ## 🚀 Final Note
 
