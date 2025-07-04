@@ -205,6 +205,28 @@ $$
 
   ![Non Convex Function](non_convex_function.png)
 
+---
+
+## 🎮 Playground
+
+Dive into an interactive deep learning playground — explore neural networks, tune hyperparameters, and watch models learn in real time.
+
+Explore and experiment with core deep learning concepts such as neural network structures, activation functions, learning rates, and optimization techniques using interactive visual tools.
+
+These playgrounds help you:
+
+* Visualize how models learn from data
+
+* Observe the effect of changing network architecture and hyperparameters
+
+* Understand optimization behavior like gradient descent in action
+
+ 👉 [Neural Network Interactive Playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.63699&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+ 👉 [Gradient Descent Optimization Visualizer](https://uclaacm.github.io/gradient-descent-visualiser/)
+
+Use these tools to deepen your intuition for how deep learning models train and generalize.
+
 
 ## 🚀 Final Note
 
