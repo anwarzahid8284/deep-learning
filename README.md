@@ -35,6 +35,7 @@ Start small, stay consistent, and remember — every great AI begins with a simp
    - [4.3 Graduate Admission Prediction Using ANN (Regression)](#43-graduate-admission-prediction-using-ann-regression)  
 5. [Lecture 5: Loss Functions](#lecture-5-loss-functions)
 6. [Lecture 6: Gradient Descent](#lecture-6-gradient-descent)
+7. [Lecture 7: Back Propagation](#lecture-7-back-propagation)
 
 ---
 
@@ -206,6 +207,7 @@ $$
   ![Non Convex Function](non_convex_function.png)
 
 ---
+## Lecture 7: Back Propagation
 
 ## 🎮 Playground
 
