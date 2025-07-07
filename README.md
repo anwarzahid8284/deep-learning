@@ -237,6 +237,38 @@ Steps number 2 run for number of x epochs
  w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla L(w_{\text{old}})
  $$
 
+## 🔗 Chain Rule in Backpropagation
+
+The **chain rule** is fundamental in training neural networks. It allows us to compute how the loss changes with respect to each weight and bias by breaking down complex functions into simpler derivatives.
+
+### Formula:
+
+$$
+\frac{\partial L}{\partial x} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial x}
+$$
+
+Where:
+- \( L \) is the loss
+- \( \hat{y} \) is the predicted output
+- \( x \) is the parameter we want to update (e.g., weight or bias)
+
+###  Example in Neural Networks:
+
+
+- L is the loss  
+- ŷ = σ(w · x + b)
+
+Then the derivative of the loss with respect to the weight is:
+
+$$
+\frac{\partial L}{\partial w} = \frac{\partial L}{\partial \hat{y}} \cdot \frac{\partial \hat{y}}{\partial w}
+$$
+
+Each derivative is computed step-by-step during backpropagation.
+
+This allows gradients to **flow backward** through the network and update all parameters efficiently.
+
+
 ## 🎮 Playground
 
 Dive into an interactive deep learning playground — explore neural networks, tune hyperparameters, and watch models learn in real time.
