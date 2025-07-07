@@ -211,8 +211,31 @@ $$
 
 Backpropagation is an algorithm used in artificial neural networks to adjust the network's weights based on the error calculated during the forward pass. It essentially propagates the error signal backward through the network, allowing the network to learn from its mistakes and improve its predictions. Think of it as a feedback loop where the network learns to adjust its parameters to minimize the difference between its output and the desired output.
 
- ![Back Propagations](back_propagations.png)
- 
+# 🧠 Neural Network with 9 Trainable Parameters
+
+- **2 input features**
+- **1 hidden layer with 2 neurons**
+- **1 output neuron**
+- **Total trainable parameters: 9**
+
+
+## Network Architecture
+
+
+ ![Back Propagations](back_propagations.jpg)
+
+### Algorithm Steps:
+1. Initially assign random value for weights & bias Let w=1, b=0
+2. for i in range(Number of rows in dataset)
+   - Take first record and do farward propagation to predict (ŷ)
+   - Calculate Loss function value
+   - On the base of loss function value adjust all the weights and bias using gradient decent.
+
+Steps number 2 run for number of x epochs
+
+ $$
+ w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla L(w_{\text{old}})
+ $$
 
 ## 🎮 Playground
 
