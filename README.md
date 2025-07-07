@@ -248,8 +248,8 @@ $$
 $$
 
 Where:
-- \( L \) is the loss
-- \( \hat{y} \) is the predicted output
+- L is the loss
+- ŷ is the predicted output
 - \( x \) is the parameter we want to update (e.g., weight or bias)
 
 ###  Example in Neural Networks:
