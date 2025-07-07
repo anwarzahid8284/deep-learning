@@ -209,6 +209,8 @@ $$
 ---
 ## Lecture 7: Back Propagation
 
+Backpropagation is an algorithm used in artificial neural networks to adjust the network's weights based on the error calculated during the forward pass. It essentially propagates the error signal backward through the network, allowing the network to learn from its mistakes and improve its predictions. Think of it as a feedback loop where the network learns to adjust its parameters to minimize the difference between its output and the desired output.
+
 ## 🎮 Playground
 
 Dive into an interactive deep learning playground — explore neural networks, tune hyperparameters, and watch models learn in real time.
