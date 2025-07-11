@@ -225,6 +225,7 @@ Backpropagation is an algorithm used in artificial neural networks to adjust the
  ![Back Propagations](back_propagations.jpg)
 
 ### Algorithm Steps:
+
 1. Initially assign random value for weights & bias Let w=1, b=0
 2. for i in range(Number of rows in dataset)
    - Take first record and do farward propagation to predict (ŷ)
@@ -236,6 +237,25 @@ Steps number 2 run for number of x epochs
  $$
  w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla L(w_{\text{old}})
  $$
+ 
+### Key Points:
+
+   - Loss function is combination of 9 trainable parameters.
+   - Gradient is fantsy word of derivative for more one varaible
+   - Like Here L(w11,w12-------b21) which is multiple variable so when calcuate the derive for complex derive we call it gradient through which we calculate the slope (check change of y by putting x value)
+
+### 📘 Derivative vs Gradient – Tabular Overview
+
+
+| Concept       | Mathematical Expression                              | Explanation                                                                 |
+|---------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Derivative** (single variable) | $\frac{df}{dx}$                              | Measures how a scalar function $f(x)$ changes with respect to variable $x$ |
+| Example       | If $f(x) = 3x^2 + 2x + 1$ then $\frac{df}{dx} = 6x + 2$ | Simple derivative of a polynomial function                                 |
+| **Gradient** (9 parameters)      | $\nabla f = \left[\frac{\partial f}{\partial \theta_1}, \ldots, \frac{\partial f}{\partial \theta_9} \right]$ | Vector of partial derivatives for multivariate functions                   |
+| Example       | If $f(\theta) = \theta_1^2 + 2\theta_2^2 + \cdots + 9\theta_9^2$, then $\nabla f = [2\theta_1,\ 4\theta_2,\ \ldots,\ 18\theta_9]$ | Shows how each parameter affects the function value                        |
+| Use Cases     | Calculus, optimization, physics                      | Common in single-variable analysis                                         |
+|               | Machine Learning, deep learning, multivariate calculus | Essential for gradient descent and neural network training                 |
+
 
 ## 🔗 Chain Rule in Backpropagation
 
@@ -267,6 +287,9 @@ $$
 Each derivative is computed step-by-step during backpropagation.
 
 This allows gradients to **flow backward** through the network and update all parameters efficiently.
+
+ 
+
 
 
 ## 🎮 Playground
