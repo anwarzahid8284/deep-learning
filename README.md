@@ -288,6 +288,10 @@ Each derivative is computed step-by-step during backpropagation.
 
 This allows gradients to **flow backward** through the network and update all parameters efficiently.
 
+### Convegence 
+
+In neural networks, convergence refers to the point during training where the model's performance (typically measured by a loss function) stops improving significantly or plateaus. Essentially, it's when the network's parameters (weights and biases) have adjusted to a stable state, meaning further training is unlikely to yield substantial gains in accuracy on the training data. 
+
  
 
 
