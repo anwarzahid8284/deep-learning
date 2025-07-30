@@ -36,6 +36,7 @@ Start small, stay consistent, and remember — every great AI begins with a simp
 5. [Lecture 5: Loss Functions](#lecture-5-loss-functions)
 6. [Lecture 6: Gradient Descent](#lecture-6-gradient-descent)
 7. [Lecture 7: Back Propagation](#lecture-7-back-propagation)
+8. [Lecture 8: Vanishing Gradient Problem in ANN](#lecture-8-vanishing-gradient-problem-in-ann)
 
 ---
 
@@ -292,9 +293,31 @@ This allows gradients to **flow backward** through the network and update all pa
 
 In neural networks, convergence refers to the point during training where the model's performance (typically measured by a loss function) stops improving significantly or plateaus. Essentially, it's when the network's parameters (weights and biases) have adjusted to a stable state, meaning further training is unlikely to yield substantial gains in accuracy on the training data. 
 
- 
+## Lecture 8: Vanishing Gradient Problem in ANN
 
+The vanishing gradient problem occurs during backpropagation in deep neural networks when gradients of the loss function become very small as they are propagated backward through layers.
 
+This leads to:
+- Very slow learning (weights in earlier layers update very little).
+- Poor performance in deep networks.
+- Stuck training (model fails to converge).
+
+This typically happens when using activation functions like sigmoid or tanh, which squash input values into a small range (e.g., [0, 1] or [-1, 1]), causing their derivatives to be small and eventually vanish through layers.
+
+### How to Identify Vanishing Gradient Problem?
+
+You may be facing this issue if:
+- Training loss decreases very slowly or not at all.
+- Weights in earlier layers stay unchanged or barely change during training.
+- Plot a graph of weights.
+
+###  Solve Vanishing Gradient Problem
+
+- ReLU Activation
+- Proper Weight Initialization
+- Batch Normalization
+- Residual Connections (ResNe)
+- Reduce model complexity (Reduce hidden layer)
 
 ## 🎮 Playground
 
